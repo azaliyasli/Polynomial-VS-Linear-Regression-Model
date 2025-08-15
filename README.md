@@ -8,6 +8,7 @@ This project demonstrates **Linear Regression** and **Polynomial Regression** to
 -  Visualization of regression results
 -  High-resolution plot for smoother polynomial curve
 -  Salary prediction for position level **6.5**
+-  Evaluate the model performance
 
 ## 🛠 Requirements
 - Python 3.x 
