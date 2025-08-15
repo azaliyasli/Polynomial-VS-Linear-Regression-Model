@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import r2_score
 
 df = pd.read_csv("Position_Salaries.csv")
 X = df.iloc[:, 1:2].values
@@ -48,4 +49,8 @@ print(pred_lin)
 
 #Predict salary in level of 6.5 with Polynomial Regression
 pred_poly = linTOpoly_reg.predict(poly_reg.fit_transform([[6.5]]))
+
 print(pred_poly)
+
+#Evaluating the Model Performance
+print(r2_score(y_val, y_pred))
